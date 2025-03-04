@@ -1,3 +1,48 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.btn-primary {
+    @apply border border-blue-400 text-blue-500 px-2 py-1.5 rounded-md transition duration-200 hover:bg-blue-400 hover:text-white;
+}
+
+.btn-danger {
+    @apply border border-red-400 text-red-500 px-2 py-1.5 rounded-md transition duration-200 hover:bg-red-400 hover:text-white;
+}
+
+.btn-edit, .btn-delete {
+    @apply border-none text-white px-4 py-2 rounded-md transition duration-200;
+}
+
+.input {
+    @apply h-8 px-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.input-textarea {
+    @apply w-[14.25%] h-[25%] px-2 py-1 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500;
+}
+
+.text-h1 {
+    @apply text-2xl font-semibold text-gray-900;
+}
+
+.text-h3 {
+    @apply text-lg font-semibold text-gray-700;
+}
+
+.table-style {
+    @apply border border-black px-4 py-2;
+}
+
+.td-edit, .td-delete {
+    @apply border-2 px-4 py-2 text-center;
+}
+
+.td-edit {
+    @apply bg-blue-500 text-white;
+}
+
+.td-delete {
+    @apply bg-red-500 text-white;
+}
